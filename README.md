@@ -1,13 +1,12 @@
 # DistillAI
 
-<p align="center">
-
-<img src="" width="1280px">
-
-</p>
-
 ## About the project
 
+<p align="center">
+
+<img src="https://user-images.githubusercontent.com/33979978/232232093-8bc9ab84-4c10-44da-becc-bbe21571c63c.png" width="240px">
+
+</p>
 DistillAI is a PyTorch library for knowledge distillation. It is built on top of PyTorch Lightning and provides a simple API for training knowledge distillation models.
 
 ## Installation
