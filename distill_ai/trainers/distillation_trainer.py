@@ -1,7 +1,7 @@
 import torch
-from distill_ai.modules.distillation_module import LogitsDistillationModule
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
+from distill_ai.modules import LogitsDistillationModule
 
 
 class KnowledgeDistillationTrainer(pl.Trainer):

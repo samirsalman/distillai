@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
-from distill_ai.losses.distillation_loss import DistillationLoss
-from distill_ai.trainers.distillation_trainer import KnowledgeDistillationTrainer
+from distill_ai.losses import DistillationLoss
+from distill_ai.trainers import KnowledgeDistillationTrainer
 
 try:
     from sklearn.datasets import make_classification

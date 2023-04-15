@@ -3,7 +3,7 @@ from typing import Any, List, Tuple
 import pytorch_lightning as pl
 import torch.nn as nn
 import torchmetrics
-from distill_ai.losses.distillation_loss import DistillationLoss
+from distill_ai.losses import DistillationLoss
 
 
 class BaseKnowledgeDistillationModule(pl.LightningModule):
