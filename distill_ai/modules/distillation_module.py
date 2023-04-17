@@ -71,7 +71,7 @@ class LogitsDistillationModule(BaseKnowledgeDistillationModule):
             teacher_logits = self.teacher(x) / self.temperature
         # Compute the logits of the student model
         student_logits = self.student(x) / self.temperature
-        # Compute the classification loss
+        # Compute the classification loss of the student
         classification_loss = self.classification_loss_fn(student_logits, y)
 
         # Compute the distillation loss
@@ -118,5 +118,5 @@ class LogitsDistillationModule(BaseKnowledgeDistillationModule):
 
     def configure_optimizers(self):
         # Define the optimizer and learning rate scheduler here
-        optimizer = self.optimizer(self.parameters(), lr=self.lr)
+        optimizer = self.optimizer(self.student.parameters(), lr=self.lr)
         return optimizer
