@@ -15,6 +15,9 @@ DistillAI is a PyTorch library for knowledge distillation. It is built on top of
 2. Intall using pip `pip install -e .`
 
 ## Usage
+
+Look at https://github.com/samirsalman/distillai/blob/main/examples/example.py for more details.
+
 ```python
 from distill_ai.losses.distillation_loss import DistillationLoss
 from distill_ai.trainers.distillation_trainer import KnowledgeDistillationTrainer
